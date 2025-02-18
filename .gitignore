@@ -1,0 +1,39 @@
+# .gitignore for Symfony 7.2 Task Manager
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+# Symfony cache, logs, and temp files
+/var/
+!var/.gitkeep
+
+# Environment files (sensitive config)
+
+# IDE & OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Node modules (if using any frontend tooling)
+/node_modules/
+
+# PHPUnit result cache
+.phpunit.result.cache
+
+# Coverage reports
+/coverage/
+
+# Build artifacts (if applicable)
+/build/
+/dist/
+
+# Ignore local docker config overrides (optional)
+docker-compose.override.yaml
